@@ -1,5 +1,10 @@
-@import "nullstyle";
-@import "variables";
-@import "mixin";
-@import "media";
+//@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@100;300;400;500;700&display=swap');
+@import "base/nullstyle";
+@import "base/variables";
+@import "base/mixin";
+@import "media/media";
+@import "bloks/promo";
+@import "bloks/header";  
+@import "bloks/buttons";
 @import "general";
+
