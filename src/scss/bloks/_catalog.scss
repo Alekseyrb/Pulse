@@ -34,10 +34,13 @@
         }
     }
     &__content {
-        display: flex;
+        display: none;
         justify-content: space-between;
         flex-wrap: wrap;
         margin-top: 60px;
+        &_active {
+            display: flex;
+        }
     }
     &-item {
         width: 300px;
@@ -76,6 +79,7 @@
             font-size: 17px;
             font-weight: 500;
             text-decoration: underline;
+            text-transform: uppercase;
             &:hover {
                 color: $main-color;
             }
@@ -144,6 +148,18 @@
                     top: 8px;
                 }
             }
+        }
+        &__back {
+            position: absolute;
+            left: 50%;
+            transform: translateX(calc(-50% - 19px));
+            bottom: 0;
+            display: block;
+            font-size: 14px;
+            font-weight: 500;
+            text-decoration: underline;
+            text-transform: uppercase;
+            color: $main-color;
         }
     }
 }
