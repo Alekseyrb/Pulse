@@ -29,8 +29,20 @@
         text-align: center;
         color: $sub-color;
         a {
-           color: #FF0000;
+            color: #ff0000;
             text-decoration: underline;
+        }
+    }
+    &__icon {
+        &_animated {
+            animation: heartbeat 1.3s ease infinite;
+            // animation-name: heartbeat;
+            // animation-duration: 1.3s;
+            // animation-timing-function: ease;
+            // animation-iteration-count: infinite;
+            &:hover {
+                animation-duration: 0.5s;
+            }
         }
     }
 }
